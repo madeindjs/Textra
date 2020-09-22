@@ -85,6 +85,7 @@ export default {
           if (this.infinite) {
             this.dataCounter = 0;
             this.currentWord = this.data[this.dataCounter];
+            this.$emit("change", this.currentWord);
           } else {
             // stopping animation
             return;
